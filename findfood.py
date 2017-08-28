@@ -67,9 +67,3 @@ print 'Food Probability Score:', p
 
 # Save the image
 io.imsave(OUTPUT_FILENAME, im_result)
-
-
-
-
-
-
