@@ -1,4 +1,4 @@
-# Food Hunting with CNN
+# Food Hunting with CNNs
 
 This script does two things:
 * Outputs the probability of the input image containing food
