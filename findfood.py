@@ -7,7 +7,6 @@ import numpy as np
 from keras.applications import inception_v3
 from keras.models import Model, load_model
 from skimage import io, transform
-import pandas as pd
 import cv2
 import sys
 
