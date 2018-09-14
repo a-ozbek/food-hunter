@@ -2,14 +2,14 @@
 Outputs the probability of the image being a food image and
 location of the food in the input image
 """
-
+from __future__ import print_function 
 import numpy as np
 from keras.applications import inception_v3
 from keras.models import Model, load_model
 from skimage import io, transform
 import cv2
 import sys
-from __future__ import print_function 
+
 
 INPUT_FILENAME, OUTPUT_FILENAME = sys.argv[1], sys.argv[2]
 
