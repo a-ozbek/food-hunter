@@ -9,6 +9,7 @@ from keras.models import Model, load_model
 from skimage import io, transform
 import cv2
 import sys
+from __future__ import print_function 
 
 INPUT_FILENAME, OUTPUT_FILENAME = sys.argv[1], sys.argv[2]
 
@@ -62,7 +63,7 @@ im_result = (im / 255.0) * 0.5 + (heatmap / 255.0) * 0.5
 
 # Prediction score
 p = model.predict(preprocess_im(im))[0, 1]
-print 'Food Probability Score:', p
+print('Food Probability Score:', p)
 
 # Save the image
 io.imsave(OUTPUT_FILENAME, im_result)
